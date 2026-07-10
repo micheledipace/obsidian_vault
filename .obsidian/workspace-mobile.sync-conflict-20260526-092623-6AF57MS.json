@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "fb6c2500f89ee1e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "6a873a50549a6d64",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ee79cfd0abcac5c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Note/Diodo.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Diodo"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "329108319f6a036d",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "e97807e6141c291a",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Esplora risorse"
+        }
+      },
+      {
+        "id": "962022e858d2df51",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Ricerca"
+        }
+      },
+      {
+        "id": "219b3d4ece6f059e",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Etichette"
+        }
+      },
+      {
+        "id": "1cf1e6f3be66cdc9",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-archive",
+          "title": "Tutte le proprietà"
+        }
+      },
+      {
+        "id": "6c43ce2b29d9e6ce",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Segnalibri"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "de1712ecde8c7bec",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "b7dc6be81b978f21",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Note/Diodo.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Riferimenti"
+        }
+      },
+      {
+        "id": "f562d0674d162538",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Note/Amplificatori differenziali.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Collegamenti in uscita"
+        }
+      },
+      {
+        "id": "9ce5f9e7cf0477fa",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Note/Amplificatori differenziali.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Struttura"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Apri selezione rapida": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota del giorno": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "bases:Crea nuova Base": false
+    }
+  },
+  "active": "ee79cfd0abcac5c0",
+  "lastOpenFiles": [
+    "Note/Modello Entità Relazioni.md",
+    "Note/Algebra Relazionale.md",
+    "Note/Circuiti raddrizzatori.md",
+    "Note/Diodo.md",
+    "Note/Materiali semiconduttori.md",
+    "Note/Contatori.md",
+    "Note/Amplificatori lineari.md",
+    "Tags/Progettazione Logica.md",
+    "Note/Amplificatori differenziali.md",
+    "Tags/Amplificatori.md",
+    "Tags/Elettronica.md",
+    "Note/Integratore.md",
+    "Note/Flip-flop.md",
+    "Tags/Algebra Booleana.md",
+    "Note/Metodo di Quine-McCluskey.md"
+  ]
+}

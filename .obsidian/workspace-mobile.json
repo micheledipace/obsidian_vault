@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tags/Sistemi Operativi.md",
+                "file": "Note/Memoria Centrale.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Sistemi Operativi"
+              "title": "Memoria Centrale"
             }
           }
         ]
@@ -180,8 +180,14 @@
   },
   "active": "ee79cfd0abcac5c0",
   "lastOpenFiles": [
-    "Note/Thread.md",
     "Tags/Sistemi Operativi.md",
+    "Note/Memoria Centrale.md",
+    "Note/Schedulazione della CPU.md",
+    "Note/Memoria virtuale.md",
+    "Note/Deadlock.md",
+    "media/Multithreaded_process.svg.webp",
+    "Note/Sincronizzazione.md",
+    "Note/Thread.md",
     "Note/Transazioni.md",
     "media/Screenshot 2026-07-09 at 10.50.16.png",
     "Note/Struttura di un sistema operativo.md",
@@ -203,10 +209,6 @@
     "Tags/Analogica.md",
     "Tags/Elettronica.md",
     "Note/Amplificatori a transistor.md",
-    "Note/Circuiti raddrizzatori.md",
-    "Note/Diodo.md",
-    "Note/Materiali semiconduttori.md",
-    "Note/Contatori.md",
-    "Note/Amplificatori lineari.md"
+    "Note/Circuiti raddrizzatori.md"
   ]
 }

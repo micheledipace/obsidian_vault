@@ -1,4 +1,4 @@
-10-07-2026 15:41
+	10-07-2026 15:41
 Tags: [[Sistemi Operativi]]
 
 # Memoria Centrale
@@ -98,4 +98,5 @@ L'indirizzo logico è dato dalla coppia <selettore, spiazzamento>
 - Selettore <s,g,p> (s = numero segmento, g=bit LDT o GDT, p= bit protezione)
 - spiazzamento 
 Questa tecnica richiede tre accessi alla memoria.
+
 # Referenze

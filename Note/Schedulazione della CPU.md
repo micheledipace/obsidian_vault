@@ -63,6 +63,11 @@ La CPU esegue i processi che hanno la scadenza più vicina
 #### Schedulazione a frequenza monotona
 Viene assegnata una priorità maggiore ai processi che vengono eseguiti con maggiore frequenza.
 
-
+### Schedulazione a livello thread
+Avviene su due livelli
+- Schedulazione locale (*Process Contention Scope*)
+	La libreria dei thread decide quali thread a livello utente inserire in un thread livello kernel (mappatura molti a molti)
+- Schedulazione globale  (*System Contention Scope*)
+	Decide quali thread kernel mandare in esecuzione per prima (mappatura uno ad uno)
 
 # Referenze

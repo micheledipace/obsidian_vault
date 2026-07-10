@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Note/Memoria virtuale.md",
+                "file": "Note/Schedulazione della CPU.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Memoria virtuale"
+              "title": "Schedulazione della CPU"
             }
           }
         ]
@@ -88,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 296.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "1ed3f1bfd4857f32",
@@ -194,14 +195,20 @@
   },
   "active": "ef146c2f926aaf53",
   "lastOpenFiles": [
-    "Note/Memoria Centrale.md",
     "Note/Memoria virtuale.md",
+    "Note/Schedulazione della CPU.md",
+    "Note/Memoria Centrale.md",
+    "Tags/Sistemi Operativi.md",
+    "Tags/Analogica.md",
+    "Tags/Algebra Booleana.md",
+    "Tags/Progettazione Logica.md",
+    "Tags/Elettronica.md",
+    "Tags/Circuiti Sequenziali.md",
+    "Tags/Automatica.md",
     "Note/Deadlock.md",
     "Note/Sincronizzazione.md",
     "Note/I Processi.md",
-    "Note/Schedulazione della CPU.md",
     "media/Multithreaded_process.svg.webp",
-    "Tags/Sistemi Operativi.md",
     "Note/Tipologie di sistemi di calcolo.md",
     "Note/Flip-flop.md",
     "Note/Transazioni.md",
@@ -212,17 +219,11 @@
     "Note/Architettura del calcolatore.md",
     "media/Screenshot 2026-07-09 at 10.50.16.png",
     "Note/basi diù.md",
-    "Tags/Elettronica.md",
     "Note/Registri.md",
     "Note/Leggi dell'algebra Booleana.md",
-    "Tags/Analogica.md",
-    "Tags/Circuiti Sequenziali.md",
-    "Tags/Automatica.md",
     "Note/Regex.md",
     "Note/Amplificatori operazionali.md",
     "Note/Amplificatori lineari.md",
-    "Template/Nota.md",
-    "Note/Amplificatori differenziali.md",
     "media/Screenshot 2026-05-20 at 10.54.32.png",
     "media/Screenshot 2026-06-10 at 09.21.07.png",
     "media/Screenshot 2026-05-27 at 11.56.06.png",

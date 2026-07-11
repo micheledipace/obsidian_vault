@@ -65,15 +65,15 @@ $EAT = (\beta + \epsilon) \alpha + (2\beta + \epsilon)(1-\alpha)$
 - $\beta$ è il tempo di accesso alla memoria
 - $\alpha$ è l'hit ratio della TLB
 - $\epsilon$ è il tempo di accesso alla TLB
-#### Paginazione gerarchica
+#### Paginazione gerarchica (64 bit)
 La page map table (PMT) è paginata. Una tabella esterna contiene i riferimenti delle pagine
 #### Paginazione a due livelli
 Utilizzata per evitare che le page table occupino troppa memoria.
 I bit allocati al numero di pagina si dimezzano (due page table).
 Per sistemi a 64 bit si utilizzano tre livelli.
-#### Paginazione con funzione di hash
+#### Paginazione con funzione di hash (64 bit)
 Il numero di pagina è messo nella funzione di hash che ha come risultato l'indice del frame fisico corrispondente.
-#### Paginazione invertita
+#### Paginazione invertita (64 bit)
 Ciascuna entry della tabella delle pagine invertita è un frame fisico associato ad un solo processo.
 - Questa tecnica evita che le page table occupino troppa memoria.
 - Rende difficile l'implementazione della multiprogrammazione.

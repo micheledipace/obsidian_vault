@@ -62,6 +62,9 @@ I sistemi hard real-time devono garantire l'esecuzione di un processo in un dete
 La CPU esegue i processi che hanno la scadenza più vicina
 #### Schedulazione a frequenza monotona
 Viene assegnata una priorità maggiore ai processi che vengono eseguiti con maggiore frequenza.
+SI può optare anche per algoritmi preemptive come
+-  round robin
+- schedulazione a priorità fissa
 
 ### Schedulazione a livello thread
 Avviene su due livelli

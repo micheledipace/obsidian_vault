@@ -26,7 +26,7 @@ Tags:[[Sistemi Operativi]]
 - Operazioni di I/O interrupt driven
 - Manipolazione del file system 
 - Comunicazione tra processi 
-- Rilevamenti di interrupt non mascherabili
+- Rilevamento di interrupt non mascherabili
 - Allocazione delle risorse 
 - Logging e statistiche d'uso
 - Protezione delle risorse
@@ -39,15 +39,15 @@ I parametri del processo richiedente sono passati in una tabella di memoria (LIN
 #### Organizzazione gerarchica 
 Semplice organizzazione (MS-DOS)
 #### Microkernel
-Spazio kernel ridotto all'osso (scheduling, IPC, paging) lasciando la maggior parte delle funzionalità e servizi nel lato utente. Garantisce sicurezza e affidabilità al costo di un maggior context-switching
+Spazio kernel ridotto all'osso (scheduling, IPC, paging) lasciando la maggior parte delle funzionalità e servizi nel lato utente. Garantisce sicurezza e affidabilità al costo di un maggior overhead di context-switching
 #### Kernel monolitico
 Tutti i componenti del kernel sono caricati in un singolo livello. Può essere anche modulare come il kernel linux
 #### Kernel ibrido
 Composto da più architetture (Darwin, Windows NT)
-#### Stratificato
+#### Architettura stratificata
 Ciascun layer ha accesso ad operazioni sempre più a basso livello.
 - Il livello 0 è l'hardware mentre il livello N è l'interfaccia utente. 
-- Ciascuno strato è inacessibile dagli strati superiori
+- Ciascuno strato è inaccessibile dagli strati superiori
 - Un maggior numero di strati comporta un maggior numeri di interfaccie per l'interazione tra strati.
 ### Macchine virtuali 
 Ambiente che emula il comportamento di una macchina fisica attraverso la tecnica della virtualizzazione. 
@@ -55,7 +55,7 @@ Ambiente che emula il comportamento di una macchina fisica attraverso la tecnica
 - L'ambiente virtuale deve virtualizzare anche la modalità kernel della macchina fisica (l'ambiente è ovviamente eseguito in modalità utente)
 - La richiesta di istruzione privilegiata sulla VM viene passata alla modalità kernel virtualizzata.
 - Questo processo garantisce l'isolamento di una macchina virtuale all'hardware delle macchina fisica e ad altre istanze di macchine virtuali.
-###  Obiettivi
+###  Obiettivi di un sistema operativo
 - Obiettivi utente: facilità di utilizzo, sicurezza, affidabilità
 - Obiettivi sistema: facilità di manutenzione e di progettazione, efficienza
 # Referenze

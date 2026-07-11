@@ -16,7 +16,7 @@ Ogni sistema di calcolo è formato da:
 
 #### Sistemi mainframe batch
 - Il monitor residente (precursore del kernel) gestiva l'esecuzione di job simili tra loro.
-- L'intero sistema rimaneva in attesa durante le operazione di I/O
+- L'intero sistema rimaneva in attesa durante le operazioni di I/O
 	L'hardware restava inutilizzato per la maggior parte del tempo
 
 #### Sistemi multiprogrammati

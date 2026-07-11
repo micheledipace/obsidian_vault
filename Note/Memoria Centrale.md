@@ -1,4 +1,4 @@
-	10-07-2026 15:41
+10-07-2026 15:41
 Tags: [[Sistemi Operativi]]
 
 # Memoria Centrale

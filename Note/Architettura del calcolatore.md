@@ -8,13 +8,13 @@ Tags:[[Sistemi Operativi]]
 Viene caricato un programma di bootstrap (BIOS) letto da una EEPROM. 
 Inizializza i controller delle diverse perifiche e si occupa di **caricare il kernel**
 ### Gestione interrupt driven degli eventi
-Il kernel è in ascolto di eventi segnalati da interrupt hardware. L'*interrupt handler* del kernel trasferisce il controllo della CPU alla routine di gestione interrupt caricandolo dal **vettore degli interrupt**. 
+Il kernel è in ascolto di eventi segnalati da interrupt hardware. L'*interrupt handler* del kernel trasferisce il controllo della CPU alla routine di gestione interrupt caricata dal **vettore degli interrupt**. 
 - Gli interrupt non causati da eccezioni possono essere mascherati.
 - Il sistema operativo deve salvare l'indirizzo dell'istruzione interrotta e lo stato della CPU al momento dell'interruzione.
 - Attraverso una **system call** un processo utente può richiedere al kernel l'accesso a periferiche di I/O
-### DMA
+### Direct Memory Access (DMA)
 E' una tecnica che permette l'accesso a dati della memoria secondaria attraverso *bus dati* non controllati dalla CPU, che non riuscirebbe a restare al passo della velocità di trasferimento di queste periferiche.
-- La CPU si occupa solo di iniziare il trasferimento e di ricevere l'interrupt di completamento.
+- La CPU si occupa solo di iniziare il trasferimento e di eseguite la routine per l'interrupt di completamento.
 ### Protezione hardware
 La non corretta gestione della multiprogrammazione potrebbe portare un processo a interferire con il corretto funzionamento del kernel. 
 Le risorse sono protette dal sistema operativo in questo modo.

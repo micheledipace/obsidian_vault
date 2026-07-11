@@ -13,17 +13,19 @@ Due processi associati al medesimo programma sono considerate due istanze di ess
 - new 
 	Le richieste per la creazione di nuovi processi vengono inserite nella **coda di submit**. Il macroscheduler riorganizza le richieste in base alle priorità del sistema nella **coda di hold**
 - running 
+   processo attualmente in esecuzione
 - waiting (coda di wait)
 	processo in attesa di I/O, interrupt, della terminazione di un suo child
 - ready (coda di ready)
-	in attesa di essere assegnato alla CPU. Il microscheduler si occupa dell'ordine dei processi nella coda di ready ed effettua il cambio di contesto necessario affinchè la CPU si occupi di un altro processo. **La CPU è ferma** durante il cambio di contesto (*context switching*)
+	in attesa di essere assegnato alla CPU. Il microscheduler si occupa dell'ordine dei processi nella coda di ready ed effettua il cambio di contesto necessario affinchè la CPU si occupi di un altro processo. **La CPU è ferma** durante il cambio di contesto (*context switching*) effettuato dal dispatcher.
 - terminated
 ### Dispatcher
 Modulo del S.O che effettua il cambio di contesto per la CPU.
 La *dispatch latency* è il tempo necessario a gestire il cambio di contesto.
 - Se il cambio di contesto deve avvenire durante l'esecuzione di una chiamata di sistema, il kernel deve garantire la consistenza dei dati.
-	Nelle routine di sistema vengono quindi inseriti dei *preemption point*, porzioni in cui il sistema è in uno stato sicuro per effettuare il context-switching verso un processo a più alta priorità.
+	Nelle routine di sistema vengono inseriti dei *preemption point*, porzioni in cui il sistema è in uno stato sicuro per effettuare il context-switching verso un processo a più alta priorità.
 ### Schedulazione 
+Ogni S.O ha tre diversi schedulatori
 #### Schedulatore a lungo termine
 - Bilanciare i processi I/O bound (short burst) e CPU bound
 - Controllare il livello di multiprogrammazione (*numero di processi in memoria*)
@@ -63,8 +65,8 @@ La cooperazione tra processi ha numerosi vantaggi se gestito da opportune strate
 - Per gestire la concorrenza tra processi, le informazioni prodotte sono salvate in buffer di dimensione fissa o illimitata.
 ### Comunicazione tra processi  (IPC)
 E' la condivisione di informazioni tra processi. Fornisce due operazioni:
-- `send(msg)` 
-- `receive(msg)` 
+- `send(msg, P)` 
+- `receive(msg, Q)` 
 #### Comunicazione diretta
 - Fra ogni coppia di processi esiste una sola connessione
 - I processi devono conoscere destinatario e del mittente
@@ -92,7 +94,7 @@ I messaggi in attesa sono inseriti in una coda, le cui dimensioni possono variar
 	L'invio è sempre non bloccante
 #### Comunicazione su un'interfaccia di rete
 Un **socket** è l'endpoint per ricevere e manadare messaggi lungo un'interfaccia di rete.
-E' univocamente individuato da protocollo, indirizzo IP, numero di porta
+E' univocamente individuato da protocollo, indirizzo IP, e numero di porta
 #### RPC (Remote Procedure Call)
 Esecuzione di una procedura su uno spazio di indirizzamento diverso a quello del processo che chiama la **RPC**. 
 Se la procedure risiede su un computer remoto, gli *stub* si occupano della traduzione dei parametri (marshalling) e di invocare la procedura lato server (client-side = proxy/server-side = skeleton).

@@ -3,19 +3,21 @@ Tags: [[Sistemi Operativi]]
 
 # Sincronizzazione
 La sincronizzazione tra thread è necessaria quando questi tentano di accedere a dati condivisi.
-In thread che cooperano secondo il paradigma [[I Processi#Paradigma produttore consumatore|produttore consumatore]], la sequenza con cui i thread hanno accesso ai dati determina il risultato finale dell'operazione (**corse critiche**)
+In thread che cooperano secondo il paradigma [[I Processi#Paradigma produttore consumatore|produttore-consumatore]], la sequenza con cui i thread hanno accesso ai dati determina il risultato finale dell'operazione (**corse critiche**)
 ### Sezione critica
-Occore dichiarare come sezione critica la porzione di codice ad accesso condiviso
+Occorre dichiarare come sezione critica la porzione di codice ad accesso condiviso
 - Ogni thread può avere una sua sezione critica
 #### Requisiti per la sincronizzazione tra processi
 - Mutua esclusione
 	Se un thread sta eseguendo la sua sezione critica, nessun altro thread può entrare nella sua sezione critica
 - Progresso
-	I thread che **non** stanno eseguendo la loro sezione **non** critica possono decidere quale thread deve entrare nella sua sezione critica. **Nessun processo esterno** può bloccare l'accesso di un altro thread alla sua sezione critica. Previene situazioni di stallo (deadlock).
+	I thread che stanno eseguendo la loro sezione **non** critica **non** possono decidere quale thread, tra quelli che ne fanno richiesta, deve entrare nella sua sezione critica. **Nessun processo esterno** può bloccare l'accesso di un altro thread alla sua sezione critica. Previene situazioni di stallo (deadlock).
 - Attesa limitata
 	Esiste un limite di quante volte gli altri thread possono entrare nella loro sezione critica dopo che un thread ha fatto richiesta di entrare nella sua. Previene la starvation. 
 #### Algoritmo di Bakery (del fornaio)
-Fornisce una soluzione software al problema. Ogni thread riceve un token di priorità. Il thread con il token dal valore più basso possono accedere alla loro sezione critica.
+Fornisce una soluzione software al problema. 
+ - Ogni thread riceve un token di priorità. 
+ - Il thread con il token dal valore più basso può accedere alla loro sezione critica.
 - Se ci sono più thread con un token dello stesso valore, vale l'ordinamento FCFS.
 
 #### Soluzioni hardware
@@ -37,7 +39,7 @@ Il *semaforo binario* implementa il requisito mutex.
 ##### Semafori senza busy waiting
 Occorre modificare le operazioni di `acquire()` e `release()` implementando la preemption con le operazioni `block` e `wakeup(P)`
 
-Un non corretto ordine delle istruzioni `acquire()` e `release()` comportano stalli.
+Un non corretto ordine delle istruzioni `acquire()` e `release()` comportano [[Deadlock|stalli]].
 #### Monitor 
 Costrutto (ADT) che raggruppa in un'unica struttura:
 - Le variabili condivise (variabili della sezione critica)

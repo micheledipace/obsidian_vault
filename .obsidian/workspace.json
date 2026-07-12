@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d569eb8b0a58db33",
+        "id": "c50f9a070dbacbce",
         "type": "tabs",
         "children": [
           {
-            "id": "ef146c2f926aaf53",
+            "id": "1a1e4f56c039901d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "1ed3f1bfd4857f32",
@@ -193,24 +192,26 @@
       "bases:Create new base": false
     }
   },
-  "active": "ef146c2f926aaf53",
+  "active": "1a1e4f56c039901d",
   "lastOpenFiles": [
     "Note/File System.md",
+    "Note/Memoria virtuale.md",
+    "Note/Memoria Centrale.md",
+    "README.md",
+    "media/segmentazione_paginata.png",
+    "Tags/Sistemi Operativi.md",
+    "Note/Deadlock.md",
+    "Note/Sincronizzazione.md",
+    "Note/I Processi.md",
+    "Note/Schedulazione della CPU.md",
     "Note/Struttura delle memoria di massa.md",
     "Note/Transazioni.md",
-    "Note/Memoria Centrale.md",
-    "Note/Memoria virtuale.md",
-    "Note/Schedulazione della CPU.md",
-    "Tags/Sistemi Operativi.md",
     "Tags/Analogica.md",
     "Tags/Algebra Booleana.md",
     "Tags/Progettazione Logica.md",
     "Tags/Elettronica.md",
     "Tags/Circuiti Sequenziali.md",
     "Tags/Automatica.md",
-    "Note/Deadlock.md",
-    "Note/Sincronizzazione.md",
-    "Note/I Processi.md",
     "media/Multithreaded_process.svg.webp",
     "Note/Tipologie di sistemi di calcolo.md",
     "Note/Flip-flop.md",
@@ -223,14 +224,12 @@
     "Note/basi diù.md",
     "Note/Registri.md",
     "Note/Leggi dell'algebra Booleana.md",
-    "Note/Regex.md",
     "media/Screenshot 2026-05-20 at 10.54.32.png",
     "media/Screenshot 2026-06-10 at 09.21.07.png",
     "media/Screenshot 2026-05-27 at 11.56.06.png",
     "media/Screenshot 2026-05-28 at 16.07.44.png",
     "media/Screenshot 2026-05-27 at 17.33.41.png",
     "media/Screenshot 2026-05-27 at 16.55.27.png",
-    "media/Screenshot 2026-05-27 at 16.34.57.png",
     "Untitled.canvas",
     "media",
     "Tags",

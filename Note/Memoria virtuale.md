@@ -15,7 +15,7 @@ E' uno spazio di memoria centrale simulata dal sistema operativo. Questa tecnica
 ### Page fault
 Interrupt (trap) che segnala una *mancanza di pagina*. Se l'indirizzo è valido, il sistema procede a caricare la pagina cercando un frame libero.  Degli algoritmi di schedulazione delle pagine sono impiegati in caso di mancanza di frame liberi.
 ### Algoritmi di sostituzione della pagina
-Scelgono il frame vittima da liberare
+Scelgono il frame vittima da liberare.
 #### Algoritmo FIFO
 Le pagine vengono caricate nei frame fisici secondo il paradigma FIFO. 
 Esistono sequenze per cui aumentare il numero di frame fisici **fa aumentare** il numero di page fault (**Anomalia di Belady**)
@@ -38,6 +38,6 @@ Inoltre un processo può:
 - Caricare una pagina solamente nei suoi frame allocati.
 ### Thrashing
 E' il fenomeno per cui il numero delle page fault è così elevato da compromettere le perfomance del sistema. Un processo è in thrashing quando spende più tempo in richiesta di paginazione che in esecuzione.
-Il fenomeno del thrashing avviene quando il *working set*, ossia l'insieme dei dati e delle istruzioni usate più di recente del processo, è maggiore ala porzione di memoria fisica libera.
+Il fenomeno del thrashing avviene quando il *working set*, ossia l'insieme dei dati e delle istruzioni usate più di recente, del processo è maggiore alla porzione di memoria fisica libera.
 
 # Referenze

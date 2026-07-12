@@ -9,9 +9,9 @@ Il collegamento avviene in tre fasi
 - Fase di compilazione
 	Il compilatore può generare indirizzi di memoria assoluti se si conosce a priori la posizione del processo in memoria.
 - Fase di caricamento
-	Altrimenti il compilatore deve generare del codice *rilocabile*. L'indirizzo di memoria del processo viene calcolato solo nella fase di esecuzione.
+	Altrimenti il compilatore deve generare del codice *rilocabile*. L'indirizzo di memoria del processo viene calcolato appena prima che il programma venga eseguito, a partire dalla prima zona contigua di RAM.
 - Fase di esecuzione
-	La Memory Management Unit (MMU) si occupa di tradurre gli indirizzi logici e fisici e della rilocazione (*caricamento dinamico*)
+	La Memory Management Unit (MMU) si occupa di tradurre gli indirizzi e della rilocazione (*caricamento dinamico*).
 ### Linking Dinamico 
 Tecnica per cui non è necessario che ogni processo disponga di una copia delle librerie di sistema.
 - Una piccola porzione di codice (*immagine*) è predisposta ad individuare la libreria desiderata e caricare le procedure della libreria rimpiazzando se stessa.
@@ -50,7 +50,7 @@ La dimensione di un indirizzo logico è definita dall'hardware ed è diviso in d
 	E' l'indice della tabella delle pagine
 - Spiazzamento nella pagina (displacement - d)
 	Viene utilizzato per calcolare l'indirizzo di memoria fisico
-Se la dimensione di un indirizzo logico è $2^m$ e abbiamo a disposizione $n$ bit di indirizzamento (hardware), il numero di pagina occupa $m-n$ bit, mentre il displacement ne occupa $n$
+Se la dimensione di un indirizzo logico è $2^n$ e abbiamo a disposizione $m$ bit di indirizzamento (hardware), il numero di pagina occupa $m-n$ bit, mentre il displacement ne occupa $n$ 
 
 #### Protezione della memoria
 - Ogni entry ha un bit di protezione che stabilisce se la pagina è read only o rw.
@@ -66,16 +66,19 @@ $EAT = (\beta + \epsilon) \alpha + (2\beta + \epsilon)(1-\alpha)$
 - $\alpha$ è l'hit ratio della TLB
 - $\epsilon$ è il tempo di accesso alla TLB
 #### Paginazione gerarchica (64 bit)
-La page map table (PMT) è paginata. Una tabella esterna contiene i riferimenti delle pagine
+La page map table (PMT) è paginata. Una tabella esterna contiene i riferimenti delle pagine.
 #### Paginazione a due livelli
 Utilizzata per evitare che le page table occupino troppa memoria.
-I bit allocati al numero di pagina si dimezzano (due page table).
+I bit allocati al numero di pagina si dimezzano (caso di due page table).
 Per sistemi a 64 bit si utilizzano tre livelli.
 #### Paginazione con funzione di hash (64 bit)
 Il numero di pagina è messo nella funzione di hash che ha come risultato l'indice del frame fisico corrispondente.
 #### Paginazione invertita (64 bit)
-Ciascuna entry della tabella delle pagine invertita è un frame fisico associato ad un solo processo.
+Ciascuna entry della tabella delle pagine invertita è un **frame fisico** associato ad un solo processo.
+- Ogni riga è composta da PID del processo, numero di pagina logica e displacement. L'indice di tabella è un riferimento al frame fisico.
 - Questa tecnica evita che le page table occupino troppa memoria.
+	Esiste solo una page table inversa per l'intero sistema.
+- Una singola tabella di hash permette di trovare subito il frame fisico desiderato.
 - Rende difficile l'implementazione della multiprogrammazione.
 	La condivisione delle pagine permette di associare più indirizzi virtuali ad un solo indirizzo fisico.
 ### Segmentazione 
@@ -98,5 +101,5 @@ L'indirizzo logico è dato dalla coppia <selettore, spiazzamento>
 - Selettore <s,g,p> (s = numero segmento, g=bit LDT o GDT, p= bit protezione)
 - spiazzamento 
 Questa tecnica richiede tre accessi alla memoria.
-
+![[segmentazione_paginata.png]]
 # Referenze

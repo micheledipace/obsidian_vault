@@ -5,7 +5,7 @@ Tags: [[Sistemi Operativi]]
 Il file system è il componente del sistema operativo che gestisce e organizza i file nella memoria secondaria. La memoria secondaria è suddivisa in **blocchi**. 
 Un sistema operativo gestisce più file system attraverso un'interfaccia chiamata *Virtual File System*
 ### Struttura di un file
-Dal punto di vista dell'utente, un file è l'unità logica di memoria. Tuttavia, un file può occupare più blocchi di memoria, oltre ad utilizzarne un blocco speciale (*blocco di controllo di file*) che ne contiene i metadati (nome, permessi, proprietario...).
+Dal punto di vista dell'utente, un file è l'unità logica di memoria. Tuttavia, un file può occupare più blocchi di memoria, oltre ad utilizzare un ulteriore blocco speciale (*blocco di controllo di file*) che contiene i metadati (nome, permessi, proprietario...).
 ### Directory
 I file sono organizzati in directory. Una directory può essere implementata come:
 - Una lista di nomi con puntatori ai blocchi di dati 
@@ -33,9 +33,9 @@ Una tabella di linked list associano un file e i rispettivi metadati alla loro l
 #### Allocazione indicizzata
 Ogni file punta al proprio blocco indice (*i-node*). Il blocco indice punta ai blocchi di dati.
 - In Unix ogni blocco ha dimensione di 4KB.
-- Si utilizza l'indicizzazione multivello per aumentare la dimensione massima che un file può assumere.
+- Si utilizza l'indicizzazione multilivello per aumentare la dimensione massima che un file può assumere.
 ### Gestione dello spazio libero 
-Una mappa di bit che tiene traccia dei blocchi liberi e di quelli occupati è salvata in memoria centrale. Questo metodo richiede che la mappa sia sempre salvata in memoria. Sono possibili anche tecniche di raggruppamento (extent) e conteggio.
+Una mappa di bit che tiene traccia dei blocchi liberi e di quelli occupati è salvata in memoria centrale. Questo metodo richiede che la mappa sia sempre salvata in memoria. Sono possibili anche tecniche di raggruppamento e conteggio.
 #### Dimensione della bitmap
 Per un disco di $1 GB = 2^{30} B$ e blocchi di $4KB$ , il numero di blocchi presenti sul disco è$$
 n = \frac{2^{30}B}{2^{12}B} = 2^{18}.

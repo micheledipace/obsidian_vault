@@ -31,7 +31,6 @@ $t_n$ è la durata del n-esimo CPU burst
 $\alpha$ è un paramentro di peso
 #### SJF preemptive
 Variante con sospensione dell'esecuzione dell'algoritmo SJF
-
 #### Schedulazione a priorità
 Si associa una priorità numerica ad ogni processo (minore è il numero, maggiore è la priorità).
 Si eseguono per i primi i processi a priorità maggiore, come i processi real-time (processi multimediali, realtà virtuale).
@@ -39,22 +38,22 @@ Si eseguono per i primi i processi a priorità maggiore, come i processi real-ti
 Potrebbe capitare che i processi a bassa priorità non vengano mai eseguiti (**starvation**)
 - Una delle possibili soluzioni è quella di far aumentare la priorità in base alla age del processo (**aging**)
 #### RR
-Ad ogni processo è assegnato un time slice di CPU. Per il resto l'algorimo si comporta come FCFS. Da utilizzare se si vuole minimizzare il tempo di risposta.
+Ad ogni processo è assegnato un time slice di CPU. Per il resto l'algoritmo si comporta come FCFS. Da utilizzare se si vuole minimizzare il tempo di risposta.
 - Il time slice deve essere *sufficientemente maggiore* del tempo necessario al cambio di contesto effettuato dal **dispatcher** del S.O.
 - Il turnaround time aumenta al diminuire della durata dei quanti, considerando il tempo per il context-swtiching
 #### Coda multilivello
 La coda di ready è ripartita in più code. Ad esempio:
 - Coda processi in foreground (RR per il tempo di risposta)
-- Coda processi in background (FCFS  perchè i processi sono CPU bound)
+- Coda processi in background (FCFS perchè i processi sono CPU bound)
 Ogni coda può avere un algoritmo di schedulazione differente.
 Il sistema operativo può assegnare a ciascuna coda
 - Un numero di priorità
-- Un time slice
+- Un time slice (*quanto di tempo*)
 Si possono prevedere metodi per far muovere i processi tra code per prevenire la starvation
 
 ### Schedulazione nei [[Tipologie di sistemi di calcolo#Sistemi paralleli|sistemi multiprocessore]]
 Si può suddividere il carico nei seguenti modi:
-- Assegnare una coda di ready ad ogni proecssore
+- Assegnare una coda di ready ad ogni processore
 - Condivisione dei processi nella coda di ready
 ### Schedulazione nei sistemi hard real-time
 I sistemi hard real-time devono garantire l'esecuzione di un processo in un determinato intervallo di tempo
@@ -62,15 +61,15 @@ I sistemi hard real-time devono garantire l'esecuzione di un processo in un dete
 La CPU esegue i processi che hanno la scadenza più vicina
 #### Schedulazione a frequenza monotona
 Viene assegnata una priorità maggiore ai processi che vengono eseguiti con maggiore frequenza.
-SI può optare anche per algoritmi preemptive come
--  round robin
-- schedulazione a priorità fissa
+Si può optare anche per algoritmi preemptive come
+- round robin
+- schedulazione a priorità fissa (*NuttX*)
 
 ### Schedulazione a livello thread
 Avviene su due livelli
 - Schedulazione locale (*Process Contention Scope*)
 	La libreria dei thread decide quali thread a livello utente inserire in un thread livello kernel (mappatura molti a molti)
-- Schedulazione globale  (*System Contention Scope*)
+- Schedulazione globale (*System Contention Scope*)
 	Decide quali thread kernel mandare in esecuzione per prima (mappatura uno ad uno)
 
 # Referenze

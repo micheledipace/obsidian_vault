@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Note/Schedulazione della CPU.md",
-                "mode": "source",
+                "file": "Note/Thread.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Schedulazione della CPU"
+              "title": "Thread"
             }
           }
         ]
@@ -181,18 +181,22 @@
   "active": "ee79cfd0abcac5c0",
   "lastOpenFiles": [
     "Tags/Sistemi Operativi.md",
-    "Note/Regex.md",
-    "Note/Thread.md",
     "Note/I Processi.md",
     "Note/Architettura del calcolatore.md",
-    "Note/Struttura di un sistema operativo.md",
-    "Note/Tipologie di sistemi di calcolo.md",
-    "Note/Memoria Centrale.md",
-    "Note/Schedulazione della CPU.md",
-    "Note/Memoria virtuale.md",
     "Note/Deadlock.md",
-    "media/Multithreaded_process.svg.webp",
+    "Note/Memoria virtuale.md",
+    "Note/Struttura di un sistema operativo.md",
+    "Note/process control.md",
+    "Note/Memoria Centrale.md",
+    "Note/Thread.md",
+    "Note/Schedulazione della CPU.md",
+    "Note/File System.md",
+    "Note/Struttura delle memoria di massa.md",
+    "media/segmentazione_paginata.png",
     "Note/Sincronizzazione.md",
+    "Note/Regex.md",
+    "Note/Tipologie di sistemi di calcolo.md",
+    "media/Multithreaded_process.svg.webp",
     "Note/Transazioni.md",
     "media/Screenshot 2026-07-09 at 10.50.16.png",
     "media/Concepts-_Program_vs._Process_vs._Thread.jpg",
@@ -206,9 +210,6 @@
     "Note/Algebra Relazionale.md",
     "Note/Modello Entità Relazioni.md",
     "Note/Transistor BJT.md",
-    "Tags/Analogica.md",
-    "Tags/Elettronica.md",
-    "Note/Amplificatori a transistor.md",
-    "Note/Circuiti raddrizzatori.md"
+    "Tags/Analogica.md"
   ]
 }

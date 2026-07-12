@@ -9,6 +9,18 @@ Un processo è un **programma in esecuzione**. Comprende
 - memoria allocata
 - registri CPU 
 Due processi associati al medesimo programma sono considerate due istanze di esso (thread)
+
+### Process Control Block
+E' una struttura dati del kernel che contiene le informazioni relative ad un processo. Viene creata quando il processo passa dalla coda di hold alla coda di ready (prima richiesta di esecuzione).
+Comprende:
+- Stato del processo
+- Registri CPU 
+- Informazioni per la schedulazione (priorità, time slice)
+- Valore del registro base/limite del processo
+- CPU%, MEM%
+- **Program Counter**
+	Indirizzo di memoria della prossima istruzione da eseguire
+- Informazioni sullo stato dell I/O
 ### Stato di un processo
 - new 
 	Le richieste per la creazione di nuovi processi vengono inserite nella **coda di submit**. Il macroscheduler riorganizza le richieste in base alle priorità del sistema nella **coda di hold**

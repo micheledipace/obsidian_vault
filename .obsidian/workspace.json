@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Note/Struttura delle memoria di massa.md",
+                "file": "Note/I Processi.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Struttura delle memoria di massa"
+              "title": "I Processi"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#ddv",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +84,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -194,17 +195,17 @@
   },
   "active": "1a1e4f56c039901d",
   "lastOpenFiles": [
+    "Tags/Sistemi Operativi.md",
+    "Note/Memoria Centrale.md",
+    "Note/Deadlock.md",
+    "Note/I Processi.md",
+    "Note/Sincronizzazione.md",
+    "Note/Struttura delle memoria di massa.md",
     "Note/File System.md",
     "Note/Memoria virtuale.md",
-    "Note/Memoria Centrale.md",
     "README.md",
     "media/segmentazione_paginata.png",
-    "Tags/Sistemi Operativi.md",
-    "Note/Deadlock.md",
-    "Note/Sincronizzazione.md",
-    "Note/I Processi.md",
     "Note/Schedulazione della CPU.md",
-    "Note/Struttura delle memoria di massa.md",
     "Note/Transazioni.md",
     "Tags/Analogica.md",
     "Tags/Algebra Booleana.md",

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Note/Memoria Centrale.md",
+                "file": "Note/Struttura delle memoria di massa.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Memoria Centrale"
+              "title": "Struttura delle memoria di massa"
             }
           }
         ]
@@ -195,9 +195,12 @@
   },
   "active": "ef146c2f926aaf53",
   "lastOpenFiles": [
-    "Note/Schedulazione della CPU.md",
-    "Note/Memoria virtuale.md",
+    "Note/File System.md",
+    "Note/Struttura delle memoria di massa.md",
+    "Note/Transazioni.md",
     "Note/Memoria Centrale.md",
+    "Note/Memoria virtuale.md",
+    "Note/Schedulazione della CPU.md",
     "Tags/Sistemi Operativi.md",
     "Tags/Analogica.md",
     "Tags/Algebra Booleana.md",
@@ -211,7 +214,6 @@
     "media/Multithreaded_process.svg.webp",
     "Note/Tipologie di sistemi di calcolo.md",
     "Note/Flip-flop.md",
-    "Note/Transazioni.md",
     "Tags/Linux.md",
     "Note/Thread.md",
     "media/Concepts-_Program_vs._Process_vs._Thread.jpg",
@@ -222,8 +224,6 @@
     "Note/Registri.md",
     "Note/Leggi dell'algebra Booleana.md",
     "Note/Regex.md",
-    "Note/Amplificatori operazionali.md",
-    "Note/Amplificatori lineari.md",
     "media/Screenshot 2026-05-20 at 10.54.32.png",
     "media/Screenshot 2026-06-10 at 09.21.07.png",
     "media/Screenshot 2026-05-27 at 11.56.06.png",

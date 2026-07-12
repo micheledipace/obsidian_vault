@@ -9,7 +9,7 @@ E' uno spazio di memoria centrale simulata dal sistema operativo. Questa tecnica
 	La pagina viene introdotta nella memoria fisica (frame) solo se è necessaria. Un bit di validità indica se la pagina è caricata in memoria.
 - Copy on write
 	Quando un processo padre condivide le sue risorse con i processi figli, gli indirizzi logici dei processi figli puntano agli indirizzi fisici del padre. Una copia viene creata quando uno di questi effettua una modifica sui dati.
-- Mappatura in memoria
+- Mappatura in memoria (*Memory Mapped I/O*)
 	Il sistema operativo mappa un blocco del disco ad una pagina in memoria centrale. Così facendo si può accedere al file attraverso una richiesta di paginazione: il file è ora una sequenza di indirizzi virtuali ai quali la CPU può avere accesso come se fosse una porzione di memoria secondaria. Questa tecnica velocizza le operazioni di I/O.
 - Swapping
 ### Page fault

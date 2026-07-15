@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Note/I Processi.md",
+                "file": "Note/PX4.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "I Processi"
+              "title": "PX4"
             }
           }
         ]
@@ -84,8 +84,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -195,17 +194,24 @@
   },
   "active": "1a1e4f56c039901d",
   "lastOpenFiles": [
-    "Tags/Sistemi Operativi.md",
-    "Note/Memoria Centrale.md",
-    "Note/Deadlock.md",
-    "Note/I Processi.md",
-    "Note/Sincronizzazione.md",
-    "Note/Struttura delle memoria di massa.md",
+    "Note/NuttX.md",
+    "Note/ROS.md",
+    "Note/iOS.md",
+    "Note/PX4.md",
+    "Note/Struttura di un'applicazione android.md",
+    "Note/Android.md",
     "Note/File System.md",
     "Note/Memoria virtuale.md",
+    "Tags/Sistemi Operativi.md",
+    "Note/Memoria Centrale.md",
+    "Note/I Processi.md",
+    "Note/Thread.md",
+    "Note/Schedulazione della CPU.md",
+    "Note/Deadlock.md",
+    "Note/Sincronizzazione.md",
+    "Note/Struttura delle memoria di massa.md",
     "README.md",
     "media/segmentazione_paginata.png",
-    "Note/Schedulazione della CPU.md",
     "Note/Transazioni.md",
     "Tags/Analogica.md",
     "Tags/Algebra Booleana.md",
@@ -216,15 +222,8 @@
     "media/Multithreaded_process.svg.webp",
     "Note/Tipologie di sistemi di calcolo.md",
     "Note/Flip-flop.md",
-    "Tags/Linux.md",
-    "Note/Thread.md",
     "media/Concepts-_Program_vs._Process_vs._Thread.jpg",
-    "Note/Struttura di un sistema operativo.md",
-    "Note/Architettura del calcolatore.md",
     "media/Screenshot 2026-07-09 at 10.50.16.png",
-    "Note/basi diù.md",
-    "Note/Registri.md",
-    "Note/Leggi dell'algebra Booleana.md",
     "media/Screenshot 2026-05-20 at 10.54.32.png",
     "media/Screenshot 2026-06-10 at 09.21.07.png",
     "media/Screenshot 2026-05-27 at 11.56.06.png",

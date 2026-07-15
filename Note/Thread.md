@@ -12,15 +12,15 @@ Creare nuovi thread è **meno costoso** rispetto a creare un nuovo processo.
 - E' più veloce creare nuovi thread 
 - Utilizzano le capacità multithread delle moderne CPU (esecuzione parallela).
 - Il context-swtiching può applicare strategie aggressive di caching
-### Mappatura dei thread livello kernel e utente
+### Modello di programmazione dei thread livello kernel e utente
 Alcuni thread possono essere gestiti esclusivamente nello userspace. Questi devono essere collegati ad almeno un thread kernel
-- Mappatura uno ad uno
-	Livello di multithreading elevato ma può generare overhead dovuto alla continua creazione di thread kernel
-- Mappatura molti ad uno
-	Solo un thread utente per volta può effettuare una syscall ad un thread kernel
-- Mappatura molti a molti 
+- Modello uno ad uno
+	Livello di multithreading elevato ma può generare overhead dovuto alla continua creazione di thread kernel.
+- Modello molti ad uno
+	Solo un thread utente per volta può effettuare una syscall ad un thread kernel. Semplice da implementare.
+- Modello molti a molti 
 	Aggrega più thread utente ad un numero minore o uguale di thread kernel 
-- Mappatura a due livelli 
+- Modello a due livelli 
 	Variante ibrida che permette anche la mappatura uno ad uno oltre che molti a molti
 ### System call `fork()` a livello thread
 Si può decidere di:

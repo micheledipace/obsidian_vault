@@ -22,7 +22,7 @@ L'obiettivo della multiprogrammazione è massimizzare l'utilizzo della CPU, mini
 	Tempo necessario al processo per cominiciare a rispondere
 ### Algoritmi di schedulazione (microscheduler)
 #### First Come First Served (FCFS)
-E' un algoritmo non preemptive. Può capitare che un processo I/O bound debba aspettare processi CPU bound.
+E' un algoritmo non preemptive. Può capitare che un processo I/O bound debba aspettare processi CPU bound (*convoy effect*).
 #### Shortest Job First (SJF) non-preemptive
 E' un algoritmo ottimale (minore tempo di attesa), tuttavia occorre effettuare stime di quanto durerà un processo.
 $$\tau_{n+1} = \alpha t_n + (1-\alpha) \tau_n$$
@@ -58,12 +58,14 @@ Si può suddividere il carico nei seguenti modi:
 ### Schedulazione nei sistemi hard real-time
 I sistemi hard real-time devono garantire l'esecuzione di un processo in un determinato intervallo di tempo
 #### Schedulazione Earliest Deadline First (EDF)
-La CPU esegue i processi che hanno la scadenza più vicina
-#### Schedulazione a frequenza monotona
-Viene assegnata una priorità maggiore ai processi che vengono eseguiti con maggiore frequenza.
+La CPU esegue i processi che hanno la scadenza più vicina.
+#### Schedulazione a frequenza monotona (preemptive)
+Viene assegnata una priorità maggiore ai processi che vengono eseguiti con maggiore frequenza. Consente il rispetto delle deadline previste.
 Si può optare anche per algoritmi preemptive come
 - round robin
-- schedulazione a priorità fissa (*NuttX*)
+	Potrebbe portare a violazioni delle deadline
+- schedulazione a priorità fissa 
+	Non tiene conto delle deadline previste. E' utilizzato esclusivamente in soluzioni soft real-time.
 
 ### Schedulazione a livello thread
 Avviene su due livelli

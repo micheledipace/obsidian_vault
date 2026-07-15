@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Note/Thread.md",
-                "mode": "preview",
+                "file": "Note/iOS.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Thread"
+              "title": "iOS"
             }
           }
         ]
@@ -180,15 +180,18 @@
   },
   "active": "ee79cfd0abcac5c0",
   "lastOpenFiles": [
+    "Note/ROS.md",
     "Tags/Sistemi Operativi.md",
+    "Note/NuttX.md",
+    "Note/PX4.md",
+    "Note/Memoria Centrale.md",
+    "Note/Thread.md",
     "Note/I Processi.md",
     "Note/Architettura del calcolatore.md",
     "Note/Deadlock.md",
     "Note/Memoria virtuale.md",
     "Note/Struttura di un sistema operativo.md",
     "Note/process control.md",
-    "Note/Memoria Centrale.md",
-    "Note/Thread.md",
     "Note/Schedulazione della CPU.md",
     "Note/File System.md",
     "Note/Struttura delle memoria di massa.md",
@@ -207,9 +210,6 @@
     "Tags/Basi di Dati.md",
     "Note/Modello Relazionale.md",
     "Note/Normalizzazione.md",
-    "Note/Algebra Relazionale.md",
-    "Note/Modello Entità Relazioni.md",
-    "Note/Transistor BJT.md",
-    "Tags/Analogica.md"
+    "Note/Algebra Relazionale.md"
   ]
 }

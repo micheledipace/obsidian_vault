@@ -92,7 +92,7 @@ Vengono associati bit di validità ad ogni segmento.
 E' possibile associare una tabella dei segmenti per ogni processo
 - E' possibile che processi condividano informazioni a livello di segmento
 ### Segmentazione paginata
-La tabella dei segmenti ha l'indirizzo per la tabella delle pagine relativa a quel segmento.
+La tabella dei segmenti ha l'indirizzo per la tabella delle pagine relativa a quel segmento. Le pagine relative ai segmenti hanno tutte la stessa dimensione.
 Inoltre lo spazio logico è diviso in due tabelle dei segmenti:
 - Local Descriptor Table per i segmenti privati
 - Global Descriptor Table per i segmenti condivisi.
